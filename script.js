@@ -41,7 +41,7 @@ ScrollReveal({
     duration : 1000,
     delay : 100 ,
 });
-ScrollReveal().reveal('.home-content , .heading , .footer-icon-top a', {origin:'top'});
+ScrollReveal().reveal('.home-content , .heading ', {origin:'top'});
 ScrollReveal().reveal('.home-imge ,.services-container , .portfolio-container , .contact form', {origin:'bottom'});
 ScrollReveal().reveal('.btn  ,.home-content h1', {origin:'left'});
 ScrollReveal().reveal('.about-content p', {origin:'left'});
