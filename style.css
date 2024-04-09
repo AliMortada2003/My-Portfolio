@@ -1,0 +1,463 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins',sans-serif;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior:smooth;
+}
+/*----------- project Color-------- */
+:root{
+    --bg-color:#1f242d;
+    --second-bg-color:#323946;
+    --second-bg-color:#323946;
+    --text-color:#fff;
+    --main-color:#0ef;
+}
+html{
+    overflow-x:hidden;
+    font-size: 62.5%;
+}
+body{
+    background: var(--bg-color);
+    color: var(--text-color);
+}
+section{
+    min-height: 100vh;
+    padding: 10rem 9% 2rem;
+}
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 2rem 9%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+.stiky{
+    background-color: var(--second-bg-color);
+    border-radius: 1.6rem;
+}
+.logo{
+    font-size: 2.5rem;
+    color: var(--text-color);
+    font-weight:600;
+    cursor: default;
+}
+.navbar a {
+    font-size: 1.7rem;
+    color: var(--text-color);
+    margin-left: 4rem ;
+    transition: 0.3s;
+}
+.navbar a:hover,
+.navbar a.active{
+    color: var(--main-color);
+}
+#menu-icons{
+    font-size: 3.6rem;
+    color: var(--text-color);
+    display: none;
+}
+/*============ Home Css style  ===================*/
+.home{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.home-content h3{
+    font-size: 3.2rem;
+    font-weight: 700;
+}
+.home-content h3:nth-of-type(2){
+    margin-bottom: 2rem;
+}
+span{
+    color: var(--main-color);
+}
+.home-content h1{
+    font-size: 5rem;
+    font-weight: 700;
+    line-height: 1.3;
+}
+.home-content p {
+    font-size: 1.6rem;
+}
+.home-imge img{
+    width: 35vw;
+    border: 0.2em solid var(--main-color);
+    border-radius: 50%;
+    animation: imge-animation 4s ease-in-out infinite;
+}
+.social-media a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 4rem;
+    height: 4rem;
+    background-color: transparent;
+    border: .2rem solid var(--main-color);
+    border-radius: 50%;
+    font-size: 2rem;
+    color: var(--main-color);
+    margin: 3rem 1.5rem 3rem 0 ;
+    transition: 0.3s;
+}
+.social-media a:hover{
+    background: var(--main-color);
+    color:var(--second-bg-color);
+    box-shadow: 0 0 1rem;
+}
+.btn{
+    display: inline-block;
+    padding: 1rem 2.8rem;
+    background: var(--main-color);
+    border-radius: 4rem;
+    box-shadow: 0 0 1rem var(--main-color);
+    font-size: 1.6rem;
+    font-weight: 700;
+    letter-spacing: 0.1rem;
+    color: black;
+}
+.btn:hover{
+    box-shadow: 0 0 1rem var(--text-color);
+}
+/*============ about me  css style =========*/
+.about{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--second-bg-color);
+}
+.about-img img{
+    width: 40vw;
+}
+.heading{
+    text-align: center;
+    font-size: 4.5rem;
+}
+.about-content h2 {
+    text-align: left;
+    line-height: 1.2;
+}
+.about-content h3{
+    font-size: 2.6rem;
+    font-weight: 600;
+
+}
+.about-content p{
+    font-size: 1.6rem;
+    margin: 2rem 0 3rem;
+}
+/*============ services css style ===================*/
+.services h2{
+    margin-bottom: 5rem;
+}
+.services-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+.services-container .services-box{
+    flex: 1 1 25rem;
+    padding:3rem 2rem 4rem ;
+    background: var(--second-bg-color);
+    border-radius: 2rem;
+    text-align: center;
+    border: .2rem solid var(--bg-color);
+    transition: 0.4s ease;
+}
+.services-box i {
+    font-size: 7rem;
+    color: var(--main-color);
+}
+.services-box h3{
+    font-size: 2.6rem;
+}
+.services-box p {
+    font-size: 1.9rem;
+    margin:1rem 0rem 3rem;
+}
+.services-container .services-box:hover{
+    border-color: var(--main-color);
+    transform: scale(1.06);
+}
+/*============ portfolio css style ============*/
+.portfolio{
+    background: var(--second-bg-color);
+}
+.portfolio h2{
+    font-size: 4rem;
+}
+.portfolio-container{
+    display:flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 2.5rem;
+}
+.portfolio-box {
+    width: 250px;
+    height: 350px;
+    border-radius: 3rem;
+    border: 0.1rem solid var(--main-color);
+    transition: 0.5s;
+}
+.portfolio-box img{
+    width: 100%;
+    height: 200px;
+    border-radius: 3rem;
+}
+.portfolio-container{
+    border-radius: 2rem;
+    margin-top: 4rem;
+    box-shadow: 0 0 1rem var(--bg-color);
+}
+.portfolio-box .portfolio-layer{
+    padding: 10px;
+    text-align: center;
+}
+.portfolio-box .portfolio-layer h4{
+    font-size: 2.6rem;
+    color: var(--text-color);
+
+}
+.portfolio-box .portfolio-layer p{
+    font-size: 1.5rem;
+    margin: 1rem 0 1rem;
+}
+.portfolio-box .portfolio-layer a{
+    width: 5rem;
+    height: 5rem;
+    background-color: transparent;
+    text-align: center;
+    padding-top: 3.5px;
+    border: .2rem solid var(--main-color);
+    border-radius: 50%;
+    font-size: 4rem;
+    color: var(--main-color);
+    margin: 5px;
+    transition: 0.3s;
+}
+.portfolio-box .portfolio-layer a:hover{
+    background: var(--main-color);
+    color: #fff;
+}
+.portfolio-container .portfolio-box:hover{
+    transform: scale(1.06);
+}
+/*=========== cotact me css style ===========*/
+.contact h2{
+    margin-bottom: 3rem;
+}
+.contact form{
+    max-width: 70rem;
+    margin: 1rem auto;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+.contact form .input-box{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.contact form .input-box input , .contact form textarea{
+    width: 100%;
+    padding: 1.5rem;
+    font-size: 1.6rem;
+    color: var(--text-color);
+    background: var(--second-bg-color);
+    border-radius: 0.8rem;
+    margin-bottom: 15px;
+    padding: 2rem;
+}
+.contact form .input-box input{
+    width: 44%;
+}
+.contact form textarea{
+    resize: none;
+}
+.contact form .btn{
+    cursor: pointer;
+    transition: 0.3s;
+}
+.contact form .btn:hover{
+    transform: scale(1.09);
+    color: var(--text-color);
+}
+/*=============== footer css style =================*/
+.footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 2rem 9%;
+    background: var(--second-bg-color);
+    border:0.1rem solid #0ef;
+    border-radius: 10px;
+}
+.footer-text p{
+    font-size: 1.6rem;
+    background: var(--second-bg-color);
+}
+.footer-icon-top a{
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    padding: .8rem;
+    border-radius: 0.8rem;
+    background: var(--main-color);
+    transition: .6s ease;
+}
+.footer-icon-top i{
+    font-size: 2.4rem;
+    color: var(--text-color);
+}
+.footer-icon-top a:hover{
+    background:var(--bg-color);
+    color: #fff;
+}
+/* style using in Js  */
+.hide{
+    display: none;
+}
+/* ==================== Animations ===================*/
+@keyframes imge-animation{
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-2.6rem);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+/* Media and Responsivenes  */
+@media(max-width:1200px){
+    html{
+        font-size: 55%;
+    }
+}
+@media(max-width:991px){
+    .header{
+        padding: 2rem 3%;
+    }
+    section{
+        padding: 10rem 3% 2rem;
+    }
+    .footer{
+        padding: 2rem 3%;
+    }
+    .services{
+        margin-bottom:  7rem;
+    }
+}
+@media(max-width:768px){
+    #menu-icons{
+        display: block;
+    }
+    .navbar{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        padding: 1.5rem;
+        background: var(--bg-color);
+        border-top: 0.1rem solid rgb(0,0,0,.2);
+        box-shadow: 0 0.2rem 1rem rgb(0,0,0,.2);
+        display: none;
+    }
+    .navbar.active{
+        display: block;
+    }
+    .navbar a{
+        display: block;
+        font-size: 2rem;
+        padding: 1rem ;
+        margin:3rem 0;
+    }
+    .home{
+        flex-direction: column;
+        
+    }
+    .home-content h3{
+        font-size: 2.4rem;
+    }
+    .home-content h1{
+        font-size: 4rem;
+    }
+    .home-imge img{
+        width: 70vw;
+        margin-top: 3rem;
+    }
+    .about{
+        flex-direction: column-reverse;
+    }
+    .about-img img{
+        width: 70vw;
+        margin-top: 4rem;
+        margin-bottom: 0;
+    }
+    .about-content h2{
+        font-size: 5rem;
+    }
+    .about-content h3{
+        font-size: 3rem;
+    }
+    .about-content p{
+        font-size: 2rem;
+        line-height: 1.6;
+    }
+    .services{
+        margin-bottom:  3rem;
+    }
+    .services h2{
+        margin-bottom:  3rem;
+    }
+    .portfolio-box{
+        width: 330px;
+        height: 350px;
+    }
+    .portfolio-container{
+        width: 100%;
+    }
+    .contact form .input-box input{
+        margin-bottom: 15px;
+        padding: 2.5rem;
+        margin-right: 0;
+    }
+}
+@media(max-width:450px){
+    html{
+        font-size: 50%;
+    }
+    .contact form .input-box input{
+        width: 100%;
+    }
+}
+@media(max-width:360px){
+    .about-img img{
+        width: 90vw;
+    }
+    .about{
+        text-align: center;
+    }
+    .about-content h2{
+        text-align: center;
+    }
+    .footer{
+        flex-direction:column-reverse ;
+    }
+    .footer p{
+        text-align: center;
+        margin-top: 2rem;
+    }
+}
