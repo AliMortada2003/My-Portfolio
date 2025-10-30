@@ -48,7 +48,7 @@ ScrollReveal().reveal('.about-content p', {origin:'left'});
 
 /*========================= Typed js =======================*/
 const typed = new Typed(".Muliaple-text", {
-    strings: ["Front End Developer!","Graphic Design!","Front End Developer!"],
+    strings: ["Flutter Developer!"],
     backDelay:100,
     typeSpeed:100,
     backSpeed:100,
@@ -57,5 +57,6 @@ const typed = new Typed(".Muliaple-text", {
 alerts = function(){
     alert("wait This Project will be active soon !!")
 }
+
 
 
